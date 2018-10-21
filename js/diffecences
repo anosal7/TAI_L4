@@ -1,0 +1,4 @@
+Funkcje strzałkowe w ES6 są bardziej czytelne i prostrze w użyciu
+ES6 umożliwia deklarowanie zmiennych blokowych (let) i stałych (const)
+Używając ES5 trudniej stworzyć klasę
+Używając wersji ES5, opcjonalne jest włączania Strick Mode. ES6 natomiast wymusza włączenie Strick Mode dla wielu funkcjonalność.
