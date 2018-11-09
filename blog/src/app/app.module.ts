@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -13,6 +12,8 @@ import { BlogItemComponent } from './components/blog-item/blog-item.component';
 import { BlogItemTextComponent } from './components/blog-item-text/blog-item-text.component';
 import { BlogItemImageComponent } from './components/blog-item-image/blog-item-image.component';
 import { BlogItemTextPipe } from './components/blog-item-text/blog-item-text.pipe';
+import { FilterPipe } from './pipes/filter.pipe';
+
 
 
 const appRoutes: Routes = [
@@ -45,7 +46,9 @@ const appRoutes: Routes = [
     BlogItemComponent,
     BlogItemTextComponent,
     BlogItemImageComponent,
-    BlogItemTextPipe
+    BlogItemTextPipe,
+    FilterPipe,
+
   ],
   imports: [
     BrowserModule,
