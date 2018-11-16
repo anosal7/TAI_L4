@@ -14,6 +14,11 @@ import { BlogItemImageComponent } from './components/blog-item-image/blog-item-i
 import { BlogItemTextPipe } from './components/blog-item-text/blog-item-text.pipe';
 import { FilterPipe } from './pipes/filter.pipe';
 
+import { BlogHomeComponent } from './components/blog-home/blog-home.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { BlogItemDetailComponent } from './components/blog-item-detail/blog-item-detail.component';
+
+
 
 
 const appRoutes: Routes = [
@@ -48,6 +53,10 @@ const appRoutes: Routes = [
     BlogItemImageComponent,
     BlogItemTextPipe,
     FilterPipe,
+    BlogHomeComponent,
+    SearchBarComponent,
+    BlogItemDetailComponent,
+
 
   ],
   imports: [

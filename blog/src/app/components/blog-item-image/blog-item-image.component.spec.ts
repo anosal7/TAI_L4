@@ -10,7 +10,7 @@ describe('BlogItemImageComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ BlogItemImageComponent ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

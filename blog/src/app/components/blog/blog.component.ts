@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {DataService} from "../../services/data-service.service";
 
+
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
@@ -10,12 +11,13 @@ import {DataService} from "../../services/data-service.service";
 export class BlogComponent implements OnInit {
   filterText : string;
   items : any;
+  //@Input('filterText') filterText: string;
   constructor(private dataService:DataService) { }
 
   ngOnInit() {
-    this.dataService.getAll().subscribe(result=>{
-      this.items=result;
-    });
+    //this.dataService.getAll().subscribe(result=>{
+      //this.items=result;
+    //});
   }
 
 }
