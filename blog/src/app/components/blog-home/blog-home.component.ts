@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-blog-home',
@@ -6,13 +6,9 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./blog-home.component.css']
 })
 export class BlogHomeComponent implements OnInit {
+  filterText: string;
 
-  @Input('filterText') filterText: string;
-
-  //filterText: string;
-
-  constructor() {
-  }
+  constructor() { }
 
   ngOnInit() {
   }
@@ -20,6 +16,5 @@ export class BlogHomeComponent implements OnInit {
   getName($event) {
     this.filterText = $event;
   }
-
 
 }

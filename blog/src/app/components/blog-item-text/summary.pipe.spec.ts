@@ -1,4 +1,4 @@
-import { SummaryPipe } from './blog-item-text.pipe';
+import { SummaryPipe } from './summary.pipe';
 
 describe('SummaryPipe', () => {
   it('create an instance', () => {

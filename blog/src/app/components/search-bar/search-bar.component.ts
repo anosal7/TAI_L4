@@ -6,12 +6,10 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
   styleUrls: ['./search-bar.component.css']
 })
 export class SearchBarComponent implements OnInit {
+
   filterText: string;
-
   @Output() name = new EventEmitter<string>();
-
-  constructor() {
-  }
+  constructor() { }
 
   ngOnInit() {
   }
@@ -19,4 +17,6 @@ export class SearchBarComponent implements OnInit {
   sendFilter() {
     this.name.emit(this.filterText);
   }
+
+
 }

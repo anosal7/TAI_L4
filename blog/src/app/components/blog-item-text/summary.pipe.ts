@@ -1,15 +1,15 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'blogItemText'
+  name: 'summary'
 })
-export class BlogItemTextPipe implements PipeTransform {
+export class SummaryPipe implements PipeTransform {
 
   transform(value: string, limit: any): any {
     if(!value){
       return null;
     }
-    return value.substr(0, limit)+'...';
+    return value.substr(0, limit)+'_';
   }
 
 }

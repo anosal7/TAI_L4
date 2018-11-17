@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
-
+import { Component, OnInit } from '@angular/core';
+import {DataService} from "../../services/data-service.service";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-blog-item-detail',
@@ -8,19 +8,15 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./blog-item-detail.component.css']
 })
 export class BlogItemDetailComponent implements OnInit {
-  id;
-  post;
 
-  constructor(private _Activatedroute: ActivatedRoute) {
-  }
+  text: string;
+  image: string;
+
+  constructor(private dataService: DataService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.id = this._Activatedroute.snapshot.paramMap.get('id');
-    // this.postsService.get(this.id).subscribe(post => console.log(post));
-    //this.post = this.postsService.get(this.id).subscribe(result => {
-      //this.post = result;
-    //});
-    console.log(this.post);
+    this.dataService.currentText.subscribe(text => this.text = text);
+    this.dataService.currentImage.subscribe(image => this.image = image);
   }
 
 }
